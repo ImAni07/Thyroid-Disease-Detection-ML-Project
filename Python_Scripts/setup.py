@@ -11,7 +11,7 @@ setup(
     author_email="animouani123@gmail.com",
     description=open("README.md").read(),
     description_content_type="text/markdown",
-    url="https://github.com/ImAni07/Thyroid_Disease_Detection_ML_Project.git",
+    url="https://github.com/ImAni07/Thyroid-Disease-Detection-ML-Project.git",
     packages=find_packages(),
     
     install_requires=[
