@@ -1,6 +1,6 @@
 ## Thyroid-Disease-Detection-ML-Project
 
-# Overview:-
+Overview:-
 Project Title           : Thyroid Disease Detection
 Technologies            : Machine Learning Technology
 Domain                  : Healthcare
