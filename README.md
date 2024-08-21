@@ -175,11 +175,12 @@ Features of the Project Work:-
 5. Logging: Tracks application usage and errors.
 
 Project Documentation:-
-1. High Level Document:
-2. Low Level Document:
-3. Architecture Document:
-4. Wireframe Document:
-5. Project Demo Video:
+1. High Level Document: <https://github.com/ImAni07/Thyroid-Disease-Detection-ML-Project/blob/main/Project_Documentation/HLD.pdf>
+2. Low Level Document: <https://github.com/ImAni07/Thyroid-Disease-Detection-ML-Project/blob/main/Project_Documentation/LLD.pdf>
+3. Architecture Document: <https://github.com/ImAni07/Thyroid-Disease-Detection-ML-Project/blob/main/Project_Documentation/Architecture_Document.pdf>
+4. Wireframe Document: <https://github.com/ImAni07/Thyroid-Disease-Detection-ML-Project/blob/main/Project_Documentation/Wireframe_Document.pdf>
+5. Detailed Project Report: <https://github.com/ImAni07/Thyroid-Disease-Detection-ML-Project/blob/main/Project_Documentation/Detailed_Project_Report.pdf>
+6. Project Demo Video: <https://github.com/ImAni07/Thyroid-Disease-Detection-ML-Project/blob/main/Project_Documentation/Project_Demo_Video.mp4>
 
 Conclusion:-
 1. Overview of Achievements:- The Thyroid Disease Detection project effectively utilized machine learning techniques to enhance the prediction and early diagnosis of thyroid disorders. By integrating data cleaning, feature engineering, and advanced classification algorithms, the project achieved a robust system capable of accurately assessing the risk of thyroid diseases such as hypothyroidism and hyperthyroidism.
@@ -191,6 +192,5 @@ Conclusion:-
 Acknowledgement:-
 I would like to express my sincere gratitude to PW Skills for providing me with the opportunity to work on the Thyroid Disease Detection project as part of the coursework for the "Decode Data Science with Machine Learning" program. This project, sourced from the PW Skills Experience Portal, has been instrumental in enhancing my understanding of end-to-end machine learning solutions, from data preprocessing to model deployment.
 I extend my heartfelt thanks to my mentors and instructors at PW Skills for their guidance and support throughout this course, which eventually guided me to complete this project. Their insights and feedback were invaluable in helping me navigate the challenges of this complex task.
-
 PW Skills (https://pwskills.com/) for providing the project base through the Decode Data Science with Machine Learning course.
 UCI Machine Learning Repository (https://archive.ics.uci.edu/dataset/102/thyroid+disease) for providing the dataset used in this project.
