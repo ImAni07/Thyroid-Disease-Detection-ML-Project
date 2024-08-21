@@ -57,8 +57,6 @@ General Description:-
 8. Assumptions: The system will be implemented in hospitals to handle new datasets for thyroid disease detection and reporting.
 
 Data Requirements:-
-(C:\Users\Anirban Majumder\OneDrive - RICE Group\Pictures\Screenshots\Screenshot (539).png)
-
 Data requirements solely depend on our problem. The following attributes are required:
 1. Age 
 2. Gender 
@@ -77,8 +75,6 @@ Data requirements solely depend on our problem. The following attributes are req
 15. Thyroxin – Binding Globulin (TBG)
 
 Tools:-
-(C:\Users\Anirban Majumder\OneDrive - RICE Group\Pictures\Screenshots\Screenshot (541).png)
-
 The tools used in this project include the following: 
 1. Python being the language for coding, Database Operations, Data Analytics, Machine Learning and creating the Flask App. 
 2. Flask used for creating the Web App. 
@@ -108,11 +104,33 @@ Thyroid-Disease-Detection-ML-Project/
 ├── README.md                   # This README file
 └── .gitignore                  # Git ignore file to exclude unnecessary files from version control
 
-Design Details:-
-1. Architecture: "C:\Users\Anirban Majumder\OneDrive - RICE Group\Desktop\Programming & Skills\Untitled Diagram.drawio.png"
-2. Process Workflow: "C:\Users\Anirban Majumder\OneDrive - RICE Group\Desktop\Programming & Skills\Process Flow.png"
-3. Model Training and Evaluation: "C:\Users\Anirban Majumder\OneDrive - RICE Group\Desktop\Programming & Skills\Model Training.png"
-4. Workflow of Deployment Process: "C:\Users\Anirban Majumder\OneDrive - RICE Group\Desktop\Programming & Skills\Deployment.drawio.png"
+Architecture Description:-
+1. Data Description:
+      a. The Data used in this project is the Thyroid Disease Dataset present in UCI Machine Learning Repository.
+      b. The Data from the above mentioned repository is exported to MongoDB Database and transformed into a CSV File. 
+      c. The CSV File is loaded into Jupyter Notebook (used in VS Code) and read by using Pandas Library. This is done in order to proceed further in the project. 
+2. Exploratory Data Analysis:
+      a. In this segment of the Project Work, firstly the dataset is explored in the Jupyter Notebook (used in VS Code), in order to get the initial insights               about the dataset. 
+      b. The duplicate values are dropped. 
+      c. The Missing Values are imputed. 
+      d. The Categorical Columns have been encoded, so that they can be used in Machine Learning operations, in the subsequent steps. 
+      e. Data Visualization is performed by using Matplotlib and Seaborn Libraries.
+3. Machine Learning Operations:
+      a. K – Means Algorithm has been used to create clusters in the preprocessed data and the optimum number of clusters is selected by plotting the elbow plot. 
+      b. The class imbalance is handled. 
+      c. The dataset is split into Training Dataset and Test Dataset. 
+      d. Hyperparameter tuning is done, so that the performance of models become better. 
+      e. Models are trained. 
+      f. The performance of the models are evaluated. 
+      g. The Best Performing Model is selected. 
+      h. The Best Model is saved.  
+4. Web - App Development:
+      a. The user interface is designed by using HTML, CSS and JavaScript.
+      b. The Flask app is developed.
+      c. Cloud Setup is done so that the model can be deployed.
+      d. The Application starts, once the model is deployed.
+      e. The client enters data as required and once, the Submit button is clicked, the prediction starts.
+      f. Once the prediction is done, the Predicted Result is displayed on the screen.
 
 Workflow Summary:-
 1. Firstly, the data of the database has been uploaded to MongoDB and has been successfully retrieved from MongoDB, in the form of a CSV File.
@@ -138,7 +156,8 @@ Installation:-
    cd Thyroid-Disease-Detection-ML-Project
 2. Create and Activate a Virtual Environment:
    python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   source venv/bin/activate
+   On Windows use `venv\Scripts\activate`
 3. Install Dependencies:
    pip install -r requirements.txt
 
