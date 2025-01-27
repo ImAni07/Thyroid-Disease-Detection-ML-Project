@@ -1,3 +1,5 @@
+# Importing the necessary libraries and modules
+
 import pandas as pd
 import pickle
 from file_operations import file_methods
@@ -11,7 +13,8 @@ class Prediction:
         self.log_writer = logger.App_Logger()
 
     def predict_from_model(self, form_data):
-        """Predict the outcome based on the provided form data."""
+        # Predict the outcome based on the provided form data.
+        
         try:
             self.log_writer.log(self.log_path, 'Start of Prediction')
 
@@ -59,6 +62,7 @@ class Prediction:
 
 if __name__ == "__main__":
     # Define file paths
+    
     log_path = r"path\to\Prediction_Log.txt"
     model_path = r"path\to\Thyroid_model.pickle"
 
