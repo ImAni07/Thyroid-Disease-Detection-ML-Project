@@ -1,14 +1,12 @@
 # Import Necessary Libraries
+
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from kneed import KneeLocator
 from file_operations import file_methods
 
 class KMeansClustering:
-    
-    """
-        This class shall  be used to divide the data into clusters before training.
-    """
+       # This class shall  be used to divide the data into clusters before training.
 
     def __init__(self, file_object, logger_object):
         self.file_object = file_object
