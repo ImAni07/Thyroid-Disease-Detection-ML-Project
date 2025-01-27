@@ -4,6 +4,8 @@
     The database that has been used here is MongoDB
 """
 
+# Import Required Libraries
+
 import os
 import pandas as pd
 from pymongo import MongoClient
@@ -13,9 +15,7 @@ from application_logging.logger import App_Logger
 import zipfile
 
 class DBOperation:
-    """
-        This class is used for performing the database operations
-    """
+       # This class is used for performing the database operations
     
     def __init__(self):
         self.path = 'Training_Database/'
@@ -27,9 +27,7 @@ class DBOperation:
         self.collection = self.db["Good_Raw_Data"]
 
     def databaseConnection(self):
-        """
-            Connect to MongoDB and return the collection object.
-        """
+           # Connect to MongoDB and return the collection object.
         
         try:
             self.logger.log("Training_Logs/MongoDBConnectionLog.txt", "MongoDB database connection successful")
@@ -38,9 +36,7 @@ class DBOperation:
             raise e
 
     def createTableDb(self):
-        """
-            This function is used to create a table in the database
-        """
+           # This function is used to create a table in the database
         
         try:
 
@@ -136,9 +132,7 @@ class DBOperation:
             raise e
 
     def insertIntoTableGoodData(self):
-        """
-            This function inserts good data into the MongoDB table.
-        """
+           # This function inserts good data into the MongoDB table.
         
         session = self.databaseConnection()
         goodFilePath = self.goodFilePath
@@ -234,13 +228,12 @@ class DBOperation:
         log_file.close()
 
     def selectingDatafromtableintocsv(self):
-        """
-            This function is used to select data from the table and write it into a csv file.
-        """
+           # This function is used to select data from the table and write it into a csv file.
 
         self.fileFromDb = 'Training_FileFromDB/'
         self.fileName = 'InputFile.csv'
         log_file = open("Training_Logs/ExportToCsv.txt", 'a+')
+        
         try:
             session = self.dataBaseConnection()
 
@@ -267,9 +260,7 @@ class DBOperation:
             log_file.close()
 
     def TurncateTable(self):
-        """
-            This function is used to truncate the table.
-        """
+           # This function is used to truncate the table.
         
         try:
             session = self.dataBaseConnection()
