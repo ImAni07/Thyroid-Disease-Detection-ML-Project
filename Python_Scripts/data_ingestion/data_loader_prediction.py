@@ -1,4 +1,5 @@
 # Import Required Library
+
 import pandas as pd
 
 class Data_Getter_Pred:
@@ -25,6 +26,7 @@ class Data_Getter_Pred:
         """
         
         self.logger_object.log(self.file_object,'Entered the get_data method of the Data_Getter class')
+       
         try:
             # Reading the data file
             self.data= pd.read_csv(self.prediction_file) 
