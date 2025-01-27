@@ -1,4 +1,5 @@
 # Import the Required Libraries
+
 import pandas as pd
 import numpy as np
 from sklearn.impute import KNNImputer
@@ -7,10 +8,7 @@ import pickle
 from imblearn.over_sampling import RandomOverSampler
 
 class Preprocessor:
-    
-    """
-        This class shall  be used to clean and transform the data before training.
-    """
+       # This class shall  be used to clean and transform the data before training.
 
     def __init__(self, file_object, logger_object):
         self.file_object = file_object
@@ -80,6 +78,7 @@ class Preprocessor:
         return data
 
     def replaceInvalidValuesWithNull(self,data):
+        
         """
             Method Name: is_null_present
             Description: This method replaces invalid values i.e. '?' with null, as discussed in EDA.
@@ -92,6 +91,7 @@ class Preprocessor:
         return data
 
     def is_null_present(self,data):
+        
         """
             Method Name: is_null_present
             Description: This method checks whether there are null values present in the pandas Dataframe or not.
@@ -131,6 +131,7 @@ class Preprocessor:
             raise Exception()
 
     def encodeCategoricalValues(self,data):
+        
         """
             Method Name: encodeCategoricalValues
             Description: This method encodes all the categorical values in the training set.
@@ -169,6 +170,7 @@ class Preprocessor:
         return data
 
     def encodeCategoricalValuesPrediction(self,data):
+        
         """
             Method Name: encodeCategoricalValuesPrediction
             Description: This method encodes all the categorical values in the prediction set.
@@ -203,6 +205,7 @@ class Preprocessor:
         return data
 
     def handleImbalanceDataset(self,X,Y):
+        
         """
             Method Name: handleImbalanceDataset
             Description: This method handles the imbalance in the dataset by oversampling.
@@ -216,6 +219,7 @@ class Preprocessor:
         return x_sampled,y_sampled
     
     def impute_missing_values(self, data):
+        
         """
             Method Name: impute_missing_values
             Description: This method replaces all the missing values in the Dataframe using KNN Imputer.
@@ -246,6 +250,7 @@ class Preprocessor:
             raise Exception()
 
     def get_columns_with_zero_std_deviation(self,data):
+        
         """
             Method Name: get_columns_with_zero_std_deviation
             Description: This method finds out the columns which have a standard deviation of zero.
