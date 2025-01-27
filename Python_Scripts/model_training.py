@@ -1,3 +1,5 @@
+# Import the required libraries and modules
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from data_ingestion import data_loader
@@ -14,6 +16,7 @@ class ModelTraining:
 
     def train_model(self, csv_file_path):
         self.log_writer.log(self.file_object, 'Start of Training')
+        
         try:
             # Load data from CSV
             data = pd.read_csv(csv_file_path)
@@ -56,8 +59,10 @@ class ModelTraining:
                     pickle.dump({'model': best_model, 'feature_names': feature_names}, model_file)
 
             self.log_writer.log(self.file_object, 'Successful End of Training')
+       
         except Exception as e:
             self.log_writer.log(self.file_object, f'Unsuccessful End of Training: {str(e)}')
             raise
+        
         finally:
             self.file_object.close()
