@@ -1,3 +1,5 @@
+# Import necessary libraries and modules
+
 from flask import Flask, request, jsonify, render_template
 import numpy as np
 import pandas as pd
@@ -7,6 +9,7 @@ app = Flask(__name__)
 
 # Load the trained model
 # Assume the model is stored as 'thyroid_model.pkl'
+
 file_path = r'path\to\Thyroid_model.pkl'
 with open(file_path, 'rb') as model_file:
     model = pickle.load(model_file)
