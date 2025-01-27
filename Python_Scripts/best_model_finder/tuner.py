@@ -26,10 +26,7 @@ from sklearn.metrics import roc_auc_score
 from sklearn.metrics import classification_report
 
 class Model_Finder:
-    
-    """
-        This class shall be used to find the model with the best accuracy and AUC score.
-    """
+       # This class shall be used to find the model with the best accuracy and AUC score.
 
     def __init__(self, file_object, logger_object):
         self.file_object = file_object
