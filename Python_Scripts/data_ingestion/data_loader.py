@@ -1,11 +1,9 @@
 # Import Necessary Library
+
 import pandas as pd
 
 class Data_Getter:
-    
-    """
-        This class shall  be used for obtaining the data from the source for training.
-    """
+       # This class shall  be used for obtaining the data from the source for training.
     
     def __init__(self, file_object, logger_object):
         self.training_file=r'path\to\\InputFile.csv'
